@@ -1,0 +1,11 @@
+---
+# vars file for nginx
+servers: 
+  - front_port: 80
+    backend_server: 192.168.33.20
+    backend_port: 3000
+  # - front_port: 8080
+  #   backend_server: 30001
+  #   backend_port: 192.168.33.70
+
+# main inside vars dir override main inside defaul dir

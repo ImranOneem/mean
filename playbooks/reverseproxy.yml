@@ -1,0 +1,15 @@
+---
+- hosts: 192.168.33.100
+  become: yes
+  pre_tasks:
+      - debug:
+         msg: "This tasks will be executed before the role"
+  tasks:
+      - debug:
+         msg: "This tasks will be executed after the role"
+  roles:
+   - nginx
+   post_tasks:
+      - debug:
+         msg: "This tasks will be executed after the role and all tasks in playbook"
+

@@ -1,0 +1,3 @@
+# group_vars sshould be created a the same level than inventory file
+#because ansible will find it there 
+listen_on=8080

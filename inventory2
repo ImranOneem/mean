@@ -1,0 +1,8 @@
+192.168.33.30
+192.168.33.100
+[webservers]
+192.168.33.20 listen_on=8080 servername=nodeapp
+[appservers:vars] # or share variables for all servers in the group
+listen_on=8080
+
+# or you can put this group var in the external file: see group_vars directory

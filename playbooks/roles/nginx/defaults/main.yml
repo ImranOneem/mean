@@ -1,0 +1,4 @@
+---
+# defaults file for nginx
+# main inside vars dir override main inside defaul dir
+frontend_port: 80
